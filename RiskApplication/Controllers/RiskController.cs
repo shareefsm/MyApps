@@ -1,6 +1,9 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
+using RiskApplication.Enums;
 using RiskApplication.Managers.Interfaces;
 using RiskApplication.ViewModels;
+using AppConstants = RiskApplication.Constants.Constants;
 
 namespace RiskApplication.Controllers
 {
@@ -15,9 +18,21 @@ namespace RiskApplication.Controllers
         // GET: Risk
         public ActionResult Index()
         {
-            BetHistoryViewModel model = _riskManager.GetBetStake();
+            return View("Index");
+        }
 
-            return View(model);
+        public JsonResult GetSettledBetHistoryForUnusualRateWin()
+        {
+            IList<SettledBetHistoryViewModel> settledBetHistory = _riskManager.GetSettledBetHistoryForUnusualRateWin(AppConstants.UnusualRate);
+
+            return Json(settledBetHistory);
+        }
+
+        public JsonResult GetUnSettledRiskBets(RiskTypes riskType)
+        {
+            IList<UnSettledBetHistoryViewModel> unSettledRiskBets = _riskManager.GetUnSettledRiskBets(riskType);
+
+            return Json(unSettledRiskBets);
         }
     }
 }

@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Repositories.DomainModels;
 
 namespace Repositories.Interfaces
 {
     public interface IRiskRepository
     {
-        BetHistoryDomainModel GetBetStake();
+        IList<SettledBetDomainModel> GetSettledBetHistoryDetails();
+
+        IList<UnSettledBetDomainModel> GetUnSettledBetHistoryDetails();
     }
 }

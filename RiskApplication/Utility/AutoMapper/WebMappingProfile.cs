@@ -13,7 +13,8 @@ namespace RiskApplication.Utility.AutoMapper
 
         protected override void Configure()
         {
-            CreateMap<BetHistoryDomainModel, BetHistoryViewModel>();
+            CreateMap<SettledBetDomainModel, SettledBetHistoryViewModel>();
+            CreateMap<UnSettledBetDomainModel, UnSettledBetHistoryViewModel>();
         }
     }
 }
