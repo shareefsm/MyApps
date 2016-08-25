@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Settled.csv" />
+    <None Include="Unsettled.csv" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Repositories\Repositories.csproj">
