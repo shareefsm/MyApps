@@ -1,0 +1,9 @@
+﻿@using System.Globalization
+@model RiskApplication.ViewModels.BetHistoryViewModel 
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Risk Application</h2>
+
+<p> Stake Value : @Model.Stake.ToString(CultureInfo.InvariantCulture) </p>
