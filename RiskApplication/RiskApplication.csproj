@@ -204,6 +204,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\AppScripts\riskApp.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="App_Data\Settled.csv" />
@@ -256,6 +257,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Risk\Index.cshtml" />
+    <Content Include="Views\Risk\BetHistory.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

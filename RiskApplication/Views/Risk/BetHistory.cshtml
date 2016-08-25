@@ -1,0 +1,128 @@
+﻿<div class="row">
+    <div class="col-md-3">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#sm" data-parent="#HomePanel" aria-expanded="false" aria-controls="collapseExample">
+            Settled Bet History
+        </button>
+    </div>
+</div>
+<div class="row top-buffer">
+    <div class="col-md-3">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#sl" data-parent="#HomePanel" aria-expanded="false" aria-controls="collapseExample">
+            UnSettled Risky Bets
+        </button>
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#s4" data-parent="#HomePanel" aria-expanded="false" aria-controls="collapseExample">
+            UnSettled Unusual Bets
+        </button>
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#s5" data-parent="#HomePanel" aria-expanded="false" aria-controls="collapseExample">
+            UnSettled Highly Unusual bets
+        </button>
+    </div>
+
+
+    <div class="col-md-3">
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#s6" data-parent="#HomePanel" aria-expanded="false" aria-controls="collapseExample">
+            UnSettled High Risk
+        </button>
+    </div>
+
+</div>
+<div class="row top-buffer">
+    <div id="HomePanel">
+        <div class="panel list-group">
+            <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sm" data-parent="#HomePanel">   Settled Bet History </a>
+            <div id="sm" class="sublinks collapse" data-ajaxaction="GetSettledBetHistoryForUnusualRateWin">
+                <div class="card card-block" style="">
+                    <table class="table table-striped table-hover table-bordered" style="display:none; background-color: #dff0d8">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Customer</th>
+                                <th>Event</th>
+                                <th>Paticipant</th>
+                                <th>Stake</th>
+                                <th>Win</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <a href="#" class="list-group-item" data-toggle="collapse" data-target="#sl" data-parent="#HomePanel"> UnSettled Risky Bets</a>
+            <div id="sl" class="sublinks collapse" data-ajaxaction="GetUnSettledRiskBets" data-risktype="Risky">
+                <div class="card card-block" style="">
+                    <table class="table table-striped table-hover table-bordered" style="display:none; background-color: #dff0d8">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Customer</th>
+                                <th>Event</th>
+                                <th>Paticipant</th>
+                                <th>Stake</th>
+                                <th>To Win</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <a href="#" class="list-group-item" data-toggle="collapse" data-target="#s4" data-parent="#HomePanel"> UnSettled Unusual Bets</a>
+            <div id="s4" class="sublinks collapse" data-ajaxaction="GetUnSettledRiskBets" data-risktype="Unusual">
+                <div class="card card-block" style="">
+                    <table class="table table-striped table-hover table-bordered" style="display:none; background-color: #dff0d8">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Customer</th>
+                                <th>Event</th>
+                                <th>Paticipant</th>
+                                <th>Stake</th>
+                                <th>To Win</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <a href="#" class="list-group-item" data-toggle="collapse" data-target="#s5" data-parent="#HomePanel">UnSettled Highly Unusual bets</a>
+            <div id="s5" class="sublinks collapse" data-ajaxaction="GetUnSettledRiskBets" data-risktype="HighlyUnusual">
+                <div class="card card-block" style="">
+                    <table class="table table-striped table-hover table-bordered" style="display:none; background-color: #dff0d8">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Customer</th>
+                                <th>Event</th>
+                                <th>Paticipant</th>
+                                <th>Stake</th>
+                                <th>To Win</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <a href="#" class="list-group-item" data-toggle="collapse" data-target="#s6" data-parent="#HomePanel"> UnSettled High Risk</a>
+            <div id="s6" class="sublinks collapse" data-ajaxaction="GetUnSettledRiskBets" data-risktype="HighRisk">
+                <div class="card card-block" style="">
+                    <table class="table table-striped table-hover table-bordered" style="display:none; background-color: #dff0d8">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Customer</th>
+                                <th>Event</th>
+                                <th>Paticipant</th>
+                                <th>Stake</th>
+                                <th>To Win</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,8 +1,8 @@
-﻿@using System.Globalization
-@{
+﻿@{
     ViewBag.Title = "Index";
 }
+<script src="~/Scripts/AppScripts/riskApp.js"></script>
 
-<h2>Risk Application</h2>
+<h2></h2>
 
-<p> Stake Value : 1000 </p>
+@{ Html.RenderPartial("BetHistory", "Risk"); }
